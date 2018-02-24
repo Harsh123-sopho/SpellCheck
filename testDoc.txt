@@ -1,0 +1,3 @@
+This is a document for testing the scan class.
+It has nothing of value as such, so you may ignore this.
+Okay, I have to stop with this already. I guess I have enough material for testing now. 
