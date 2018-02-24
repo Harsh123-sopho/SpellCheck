@@ -11,14 +11,15 @@ class myDictionary(object):
     def openDictionary(self):
         self.fRead=open(self.name,'r')
         for i in self.fRead:
+            i = i.lower()
             self.dictionaryList.append(i.strip())
 
     def addAWord(self,word):
-        self.dictionaryList.append(word)
+        self.dictionaryList.append(word.lower())
         self.dictionaryList.sort()
 
     def isWordInDictionary(self,word):
-        return word in self.dictionaryList
+        return word.lower() in self.dictionaryList
     
     def saveChanges(self):
         self.fWrite=open(self.name,'w')
